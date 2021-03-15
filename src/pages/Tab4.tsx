@@ -1,24 +1,24 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonToggle, IonItem, IonAlert } from '@ionic/react';
 import { isOmittedExpression } from 'typescript';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import './Tab4.css';
 
-const Tab1: React.FC = () => {
+const Tab4: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>PSCINA</IonTitle>
+          <IonTitle>SENSOR</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Pscina</IonTitle>
+            <IonTitle size="large">Sensor</IonTitle>
           </IonToolbar>
         </IonHeader>
 
-        <ExploreContainer name="Luminosidade sempre" />
+        <ExploreContainer name="Detecte intrusos" />
 
         <IonItem><IonToggle color="primary" className="tg1"/> Ligar</IonItem>
 
@@ -30,6 +30,6 @@ const Tab1: React.FC = () => {
  
 };
 
-export default Tab1;
+export default Tab4;
 
 
